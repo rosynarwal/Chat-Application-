@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 mongoose
   .connect(
     "mongodb+srv://rosynarwal027:MxX7rnGjAJm1K70Q@cluster0.rxrweyh.mongodb.net/?retryWrites=true&w=majority"
+    // "mongodb+srv://csmaterial:xXl5AKY0kGVQijWE@cluster0.3p2nd2d.mongodb.net/test"
   )
   .then(() => {
     console.log("mongodb connected");

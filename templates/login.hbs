@@ -1,0 +1,69 @@
+<link rel='stylesheet' href='css/login.css' />
+<link rel='stylesheet' href='css/style.css' />
+<script defer src='js/login.js'></script>
+<nav>
+  <button>
+    <a href='/' style='padding: 30px;font-size:large;font-weight:800;'>Home</a>
+  </button>
+</nav>
+<header>
+  <img class='logo' src='img/chat.png' alt='' />
+  <h1>Welcome to iDiscuss Chat App</h1>
+  <h1>made by Rosy</h1>
+</header>
+<div class='form-wrap'>
+  <div class='tabs'>
+    <h3 class='signup-tab'><a href='#'>Sign Up</a></h3>
+    <h3 class='login-tab'><a class='active' href='#'>Login</a></h3>
+  </div><!--.tabs-->
+
+  <div class='tabs-content'>
+    <div id='signup-tab-content'>
+      <form class='signup-form' action='/signup' method='post'>
+        <input
+          type='text'
+          class='input'
+          name='username'
+          id='user_name'
+          autocomplete='off'
+          placeholder='Username'
+        />
+        <input
+          type='password'
+          class='input'
+          name='password'
+          id='user_pass'
+          autocomplete='off'
+          placeholder='Password'
+        />
+        <input type='submit' class='button' value='Sign Up' />
+      </form><!--.login-form-->
+      <div class='help-text'>
+        <p>By signing up, you agree to our</p>
+        <p><a href='#'>Terms of service</a></p>
+      </div><!--.help-text-->
+    </div><!--.signup-tab-content-->
+
+    <div id='login-tab-content' class='active'>
+      <form class='login-form' action='/login' method='post'>
+        <input
+          type='text'
+          class='input'
+          name='username'
+          id='user_login'
+          autocomplete='off'
+          placeholder='Username'
+        />
+        <input
+          type='password'
+          class='input'
+          name='password'
+          id='user_pass'
+          autocomplete='off'
+          placeholder='Password'
+        />
+        <input type='submit' class='button' value='Login' />
+      </form><!--.login-form-->
+    </div><!--.login-tab-content-->
+  </div><!--.tabs-content-->
+</div><!--.form-wrap-->
